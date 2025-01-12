@@ -1,0 +1,39 @@
+Supervised Learning 
+
+Unsupervised Learning 
+
+Regression - Simple(linear, non-linear) and Multiple (linear and non linear)
+
+Regression Algorithms 
+Oridinal Regression, Poisson Regression, Fast forest quantile Regression, 
+Linear, Polynomial, Lasso, Stepwise, Ridge regression,
+Bayesian linear regression, 
+Nueral network regression, 
+Decision forest regression,
+Boosted decision tree regression, 
+KNN (K-nearest neighbours)
+
+Linear regression  y = theta0 + theta1.x1
+theta1 - slope or gradient, theta0 - intercept/bias coefficient 
+No parameter tuning required
+
+Mean Squared err 
+
+xbar, ybar 
+
+Model evaluation approaches 
+1. Train and test same dataset. 
+Err - E(1/n(a-p))
+
+Training accuracy 
+- over fitting, 
+
+Out of Sample accuracy 
+- should have high out of sample accuracy
+- use Train test split 
+
+K fold cross validation 
+dataset divide into folds avg of all folds accuracy
+
+evaluation metrics in regression
+Mean absolue err 
