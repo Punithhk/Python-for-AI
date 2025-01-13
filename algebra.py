@@ -96,8 +96,8 @@ colvec3 = np.array([[1],[2],[3]])
 vectorprod = np.matmul(A,colvec3)
 print(vectorprod)
 
-matrix_3x3 = np.array([1,4,5],[3,5,5],[3,5,0])
-matrix1_3x3 = np.array([1,4,5],[3,5,5],[3,5,0])
+matrix_3x3 = np.array([[1,4,5],[3,5,5],[3,5,0]])
+matrix1_3x3 = np.array([[1,4,5],[3,5,5],[3,5,0]])
 result = np.dot(matrix_3x3,matrix1_3x3)
 print(result)
 
@@ -109,6 +109,33 @@ print(result)
 # Premultiplying I213 with A result in r1 and r2 swap - I213*A
 # Postmultiplying result in c1 and c2 swap - A*I213
 
+#orthogonal projection - o is the point on vhich is closest to v1
+# o = (v1t.v3/v1t.v3).v3
+vec3 = np.array([2,3])
+vec1 = np.array([4,4])
+ortho = np.dot(np.true_divide(np.dot(vec1.transpose(),vec3),np.dot(vec1.transpose(),vec3)),vec1)
+print(ortho)
 
+#determinants 
+#should be 2d and above 
+print(np.linalg.det(matrix1_3x3))
+
+#matrix inversion 
+print(np.linalg.inv(matrix1_3x3))
+
+#orthogonal matrix is one where transpose is same as inverse of matrix 
+matrix3 = np.array([[1.0,0.0],[0.,1.]])
+comp1 = np.dot(matrix3.transpose(),matrix3) == np.dot(matrix3,matrix3.transpose())
+comp3 = np.dot(matrix3.transpose(),matrix3) == np.eye(2)
+comp4 = comp1 == comp3
+equalarr = comp4.all()
+print("It is a orthogonal matrix: ",equalarr)
+
+# linear independence is when c1v1+c2v2 = 0, where c1=c2 =0 
+# Rank of a Matrix
+print("Rank :", np.linalg.matrix_rank(matrix3))
+fullrank = np.eye(4)
+print("Rank :", np.linalg.matrix_rank(fullrank))
+# vector v in n dimension rank of v*v is 1
 
 
