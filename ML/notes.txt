@@ -37,3 +37,13 @@ dataset divide into folds avg of all folds accuracy
 
 evaluation metrics in regression
 Mean absolue err 
+
+
+Residual Error 
+
+
+Calculating multiple linear regression parameter / coefficient
+Ordinary Least Squares - rows then 10k 
+Optimization Algorithms - Gradiant descent 
+
+Overfit model - too much unwanted coefficient 

@@ -5,3 +5,5 @@ import numpy as np
 
 matrix1 = np.array([[1,5,9],[2,7,3],[8,4,6]])
 print("Streched matrix : ",np.repeat(matrix1,3,axis=1))
+#rotation 
+print("Rotated matrix : ",np.rot90(matrix1))
